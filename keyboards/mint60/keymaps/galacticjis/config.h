@@ -23,4 +23,4 @@
 // #define MASTER_RIGHT
 
 #undef TAPPING_TERM
-#define TAPPING_TERM 200
+#define TAPPING_TERM 150
