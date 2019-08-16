@@ -34,6 +34,8 @@ enum custom_keycodes {
 
 #define MT_EISU MT(MOD_LGUI, JP_MEISU)
 #define MT_KANA MT(MOD_RGUI, JP_MKANA)
+#define MT_RCMDSPC MT(MOD_RGUI, KC_SPC)
+#define MT_LCMDSPC MT(MOD_LGUI, KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT( \
@@ -52,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [2] = LAYOUT( \
     XXXXXXX,  XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,     XXXXXXX,   XXXXXXX,   JP_SLSH,   JP_ASTR,   XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX, \
-    RGB_TOG,   RGBRST,  RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX,   XXXXXXX,  KC_7,      KC_8,      KC_9,      KC_MINS, JP_AT, XXXXXXX, XXXXXXX, \
+    RGB_TOG,   RGBRST,  RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX,   XXXXXXX,  KC_7,      KC_8,      KC_9,      KC_MINS, JP_AT, XXXXXXX, KC_BSPC, \
     XXXXXXX,     RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX,   XXXXXXX,  KC_4,     KC_5,      KC_6,      JP_PLUS, XXXXXXX,        KC_ENT, \
     _______,       XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,  KC_1,    KC_2,      KC_3,      XXXXXXX, _______, XXXXXXX, _______, \
     _______,   _______,    _______,    _______,    XXXXXXX,       KC_SPC,  KC_0, KC_DOT,                   XXXXXXX, XXXXXXX, XXXXXXX \
